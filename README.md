@@ -33,9 +33,9 @@ Moissonnage de données Zenodo pour le domaine SHS
    
    def remove_collection_data(data_collection_list, kb)
 
-5. Récupèrer les méradonnées de chaque collection
+4. Récupèrer les méradonnées de chaque collection
 
-6. Récupèrer ou créer des URIs avec des requêtes SPARQL
+5. Récupèrer ou créer des URIs avec des requêtes SPARQL
    
    Chercher l'uri pour les personnes et les affliation avec les requêts SPARQL. S'il n'exist pas, on le crée.
 
@@ -50,7 +50,7 @@ Moissonnage de données Zenodo pour le domaine SHS
 
     return uri_affiliation
 
-8. Transformer les données en triplets en RDF
+6. Transformer les données en triplets en RDF
 
-Ajouter les triplets générés dans le graphe
+7. Ajouter les triplets générés dans le graphe
 
