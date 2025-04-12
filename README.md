@@ -10,6 +10,7 @@ Moissonnage de données Zenodo pour le domaine SHS
 - Importer le graphe de connaissances dans la plateforme
 
 **Structure du Code**
+
 Connecter API de Zenodo et vérifier le conteus de métadonnée de chaque collection
 Mis à jour les BDD 
 Récupèrer les méradonnées de chaque collection
