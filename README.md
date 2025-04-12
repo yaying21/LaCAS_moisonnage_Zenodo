@@ -10,6 +10,7 @@ Moissonnage de données Zenodo pour le domaine SHS
 **Structure du Code**
 
 1. Connecter API de Zenodo et vérifier le conteus de métadonnée de chaque collection
+   
    def get_zenodo_collections(okapi_url, opener):
      answer = sparql_search(okapi_url, """
             PREFIX core: <http://www.ina.fr/core#>
@@ -25,14 +26,16 @@ Moissonnage de données Zenodo pour le domaine SHS
         print(idData)
         query_listData = f"https://zenodo.org/api/records?q=doi:10.5281/zenodo.{idData}"
 
-2. Mis à jour les BDD (vérifier les métadonnées de la collection et les médias)
+3. Mis à jour les BDD (vérifier les métadonnées de la collection et les médias)
    def get_metadataCollection(json_data)
+   
    def get_collection(collection_uri, okapi_url, opener, kb, okapi_url)
+   
    def remove_collection_data(data_collection_list, kb)
 
-3. Récupèrer les méradonnées de chaque collection
+5. Récupèrer les méradonnées de chaque collection
 
-4. Récupèrer ou créer des URIs avec des requêtes SPARQL
+6. Récupèrer ou créer des URIs avec des requêtes SPARQL
    
    Chercher l'uri pour les personnes et les affliation avec les requêts SPARQL. S'il n'exist pas, on le crée.
 
