@@ -39,7 +39,18 @@ Moissonnage de données Zenodo pour le domaine SHS
    
    Chercher l'uri pour les personnes et les affliation avec les requêts SPARQL. S'il n'exist pas, on le crée.
 
-7. Transformer les données en triplets en RDF
+   def add_uri_affiliation(okapi_url, opener, affiliation) :
+    uriExi_affiliation = find_uri_affiliation(okapi_url, opener, affiliation)
+    if uriExi_affiliation is not None :
+        uri_affiliation = uriExi_affiliation
+    else :
+        affiliation_uni = unidecode.unidecode(affiliation.lower().strip())
+        affiliation_uni = re.sub(' ', '_', affiliation)
+        uri_affiliation = "http://lacas.inalco.fr/resource/" + affiliation_uni
+
+    return uri_affiliation
+
+8. Transformer les données en triplets en RDF
 
 Ajouter les triplets générés dans le graphe
 
