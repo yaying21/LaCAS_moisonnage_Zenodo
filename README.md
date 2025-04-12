@@ -2,7 +2,7 @@ Moissonnage de données Zenodo pour le domaine SHS
 
 **Mots-clés** : API REST ; Transformation RDF; Python; SPARQL
 
-###### Objectifs #######
+**###### Objectifs #######**
 - Automatiser la collecte de métadonnées depuis Zenodo via son API
 - Mettre à jour les données dans la BDD
 - Importer le graphe de connaissances dans la plateforme
